@@ -14,303 +14,298 @@
 </head>
 
 <body>
-<div data-y id="topNavBar" class="topNavBar">
-  <div class="topNavBar-inner clearfix">
-    <a class="logo" href="#" alt="logo" style="float: left;">
-      <span class="rs">RS</span>
-      <span class="card">card</span>
-    </a>
-    <nav class="menu" style="float: right;">
-      <ul class="clearfix">
-        <li>
-          <a href="#siteAbout">关于</a>
-        </li>
-        <li>
-          <a href="#siteSkills">技能</a>
-        </li>
-        <li>
-          <a href="#siteWorks">作品</a>
-          <ul class="submenu">
-            <li>作品1</li>
-            <li>作品2</li>
-            <li>作品3</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">博客</a>
-          <ul class="submenu">
-            <li>博客1</li>
-            <li>博客2</li>
-            <li>博客3</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">日历</a>
-        </li>
-        <li>
-          <a href="#">联系方式</a>
-        </li>
-        <li>
-          <a href="#">其他</a>
-        </li>
-      </ul>
-    </nav>
+  <div data-y id="topNavBar" class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+      <a class="logo" href="#" alt="logo" style="float: left;">
+        <span class="rs">RS</span>
+        <span class="card">card</span>
+      </a>
+      <nav class="menu" style="float: right;">
+        <ul class="clearfix">
+          <li>
+            <a href="#siteAbout" name="smoothly">关于</a>
+          </li>
+          <li>
+            <a href="#siteSkills" name="smoothly">技能</a>
+          </li>
+          <li>
+            <a href="#siteWorks" name="smoothly">作品</a>
+            <ul class="submenu">
+            </ul>
+          </li>
+          <li>
+            <a href="https://jiansitewang.github.io/" target="_blank">博客</a>
+          </li>
+          <li>
+            <a href="#message" name="smoothly">留言板</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-</div>
-<div class="banner">
-  <div class="mask"></div>
-</div>
-<main>
-  <div data-x id="siteAbout" class="userCard">
-    <div class="pictureAndText clearfix">
-      <div class="picture">
-        <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
-      </div>
-      <div class="text">
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <main id="userCardWrapper">
+    <div data-x id="siteAbout" class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+        </div>
+        <div class="text">
           <span class="welcome">Hello
             <span class="triangle"></span>
           </span>
-        <h1>I'm 王凯</h1>
-        <p>前端开发工程师</p>
-        <hr>
-        <dl>
-          <dt>年龄</dt>
-          <dd>18</dd>
-          <dt>所在城市</dt>
-          <dd>南京</dd>
-          <dt>邮箱</dt>
-          <dd>Clay_wang@vip.163.com</dd>
-          <dt>手机</dt>
-          <dd>13400000000</dd>
-        </dl>
+          <h1>I'm 王凯</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>18</dd>
+            <dt>所在城市</dt>
+            <dd>南京</dd>
+            <dt>邮箱</dt>
+            <dd>Clay_wang@vip.163.com</dd>
+            <dt>手机</dt>
+            <dd>13400000000</dd>
+          </dl>
+        </div>
       </div>
+      <footer class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg>
+        </a>
+      </footer>
     </div>
-    <footer class="media">
-      <a href="#">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-github"></use>
-        </svg>
-      </a>
-      <a href="#">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-twitter"></use>
-        </svg>
-      </a>
-      <a href="#">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-weibo"></use>
-        </svg>
-      </a>
-    </footer>
-  </div>
 
-  <p data-y class="downloadResume-wrapper">
-    <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
-  </p>
+    <p data-y class="downloadResume-wrapper">
+      <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+    </p>
 
-  <p data-y class="selfIntroduction">
-    王凯 前端新手
-    <br> 技能：前端开发
-  </p>
+    <p data-y class="selfIntroduction">
+      王凯 前端新手
+      <br> 技能：前端开发
+    </p>
 
-</main>
-<section data-x id="siteSkills" class="skills">
-  <h2>技能</h2>
-  <ol class="clearfix">
-    <li>
-      <h3>
-        HTML 5 &amp; CSS 3
-      </h3>
-      <div class="progressBar">
-        <div class="progress" style="width: 10%;"></div>
-      </div>
-    </li>
-    <li>
-      <h3>
-        JavaScript
-      </h3>
-      <div class="progressBar">
-        <div class="progress" style="width: 20%"></div>
-      </div>
-    </li>
-    <li>
-      <h3>
-        jQuery
-      </h3>
-      <div class="progressBar">
-        <div class="progress" style="width: 30%"></div>
-      </div>
-    </li>
-    <li>
-      <h3>
-        Vue.js
-      </h3>
-      <div class="progressBar">
-        <div class="progress" style="width: 40%"></div>
-      </div>
-    </li>
-    <li>
-      <h3>
-        React.js
-      </h3>
-      <div class="progressBar">
-        <div class="progress"  style="width: 50%"></div>
-      </div>
-    </li>
-    <li>
-      <h3>
-        Node.js
-      </h3>
-      <div class="progressBar">
-        <div class="progress"  style="width: 60%"></div>
-      </div>
-    </li>
-  </ol>
-</section>
-<section data-x class="portfolio" id="siteWorks">
-  <h2 class="bigTitle">作品集</h2>
-  <div id="mySlides">
-    <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="introductionWrapper1">
-            <h2 class="title1">键盘导航页</h2>
-            <div class="text1">
-              <p>
+  </main>
+  <section data-x id="siteSkills" class="skills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>
+          HTML 5 &amp; CSS 3
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 10%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          JavaScript
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 20%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          jQuery
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 30%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Vue.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 40%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          React.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress"  style="width: 50%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Node.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress"  style="width: 60%"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-x class="portfolio" id="siteWorks">
+    <h2 class="bigTitle">作品集</h2>
+    <div id="mySlides">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="introductionWrapper1">
+              <h2 class="title1">键盘导航页</h2>
+              <div class="text1">
+                <p>
                   这是原生JS写的一个导航首页。<br>
                   按真实键盘的样式制作的键盘导航。<br>
                   点击键盘上对应的字母键，会跳转至对应的网站。<br>
                   点击编辑可以手动添加/修改对应键位的网址。<br>
-              </p>
-              <a class="gotoReview" href="https://jiansitewang.github.io/nav-demo/" target="_blank">
-                <button class="the-button call-to-button">
-                  <span class="button-text">Review</span>
-                  <div class="button-mask"></div>
-                  <span class="button-icon">
+                </p>
+                <a class="gotoReview" href="https://jiansitewang.github.io/nav-demo/" target="_blank">
+                  <button class="the-button call-to-button">
+                    <span class="button-text">Review</span>
+                    <div class="button-mask"></div>
+                    <span class="button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
                     <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
                     </path>
                   </svg>
                 </span>
-                </button>
-              </a>
+                  </button>
+                </a>
 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="introductionWrapper2">
-            <h2 class="title2">网易云音乐</h2>
-            <div class="text2">
-              <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
-              <a class="gotoReview" href="https://jiansitewang.github.io/163music/src/index.html" target="_blank">
-                <button class="the-button call-to-button">
-                  <span class="button-text">Review</span>
-                  <div class="button-mask"></div>
-                  <span class="button-icon">
+          <div class="swiper-slide">
+            <div class="introductionWrapper2">
+              <h2 class="title2">网易云音乐</h2>
+              <div class="text2">
+                <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
+                <a class="gotoReview" href="https://jiansitewang.github.io/163music/src/index.html" target="_blank">
+                  <button class="the-button call-to-button">
+                    <span class="button-text">Review</span>
+                    <div class="button-mask"></div>
+                    <span class="button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
                     <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
                     </path>
                   </svg>
                 </span>
-                </button>
-              </a>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="introductionWrapper3">
-            <h2 class="title3">canvas画板</h2>
-            <div class="text3">
-              <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
-              <a class="gotoReview" href="https://jiansitewang.github.io/DrawingBoard/index.html" target="_blank">
-                <button class="the-button call-to-button">
-                  <span class="button-text">Review</span>
-                  <div class="button-mask"></div>
-                  <span class="button-icon">
+          <div class="swiper-slide">
+            <div class="introductionWrapper3">
+              <h2 class="title3">canvas画板</h2>
+              <div class="text3">
+                <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
+                <a class="gotoReview" href="https://jiansitewang.github.io/DrawingBoard/index.html" target="_blank">
+                  <button class="the-button call-to-button">
+                    <span class="button-text">Review</span>
+                    <div class="button-mask"></div>
+                    <span class="button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
                     <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
                     </path>
                   </svg>
                 </span>
-                </button>
-              </a>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="introductionWrapper4">
-            <h2 class="title4">css画加菲猫</h2>
-            <div class="text4">
-              <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
-              <a class="gotoReview" href="https://jiansitewang.github.io/PureCSS-Garfield/default.html" target="_blank">
-                <button class="the-button call-to-button">
-                  <span class="button-text">Review</span>
-                  <div class="button-mask"></div>
-                  <span class="button-icon">
+          <div class="swiper-slide">
+            <div class="introductionWrapper4">
+              <h2 class="title4">css画加菲猫</h2>
+              <div class="text4">
+                <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
+                <a class="gotoReview" href="https://jiansitewang.github.io/PureCSS-Garfield/default.html" target="_blank">
+                  <button class="the-button call-to-button">
+                    <span class="button-text">Review</span>
+                    <div class="button-mask"></div>
+                    <span class="button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
                     <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
                     </path>
                   </svg>
                 </span>
-                </button>
-              </a>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="introductionWrapper5">
-            <h2 class="title5">个人简历</h2>
-            <div class="text5">
-              <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
-              <a class="gotoReview" href="">
-                <button class="the-button call-to-button">
-                  <span class="button-text">Review</span>
-                  <div class="button-mask"></div>
-                  <span class="button-icon">
+          <div class="swiper-slide">
+            <div class="introductionWrapper5">
+              <h2 class="title5">个人简历</h2>
+              <div class="text5">
+                <p>这是原生JS写的一个导航首页。<br>原生JS编写，页面上的按键对应键盘按键，可编辑按键对应网站</p>
+                <a class="gotoReview" href="">
+                  <button class="the-button call-to-button">
+                    <span class="button-text">Review</span>
+                    <div class="button-mask"></div>
+                    <span class="button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
                     <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
                     </path>
                   </svg>
                 </span>
-                </button>
-              </a>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev">
-        <svg class="icon">
-          <use xlink:href="#icon-jiantou-zuo"></use>
-        </svg>
-      </div>
-      <div class="swiper-button-next">
-        <svg class="icon">
-          <use xlink:href="#icon-jiantou-you"></use>
-        </svg>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <svg class="icon">
+            <use xlink:href="#icon-jiantou-zuo"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg class="icon">
+            <use xlink:href="#icon-jiantou-you"></use>
+          </svg>
+        </div>
       </div>
     </div>
- </div>
-</section>
+  </section>
 
-<section class="message">
-  <h2>留言</h2>
-  <ol id="messageList">
-  </ol>
-  <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
-    <label for="">姓名</label>
-    <input type="text" name="name">
-    <label for="">内容</label>
-    <input type="text" name="content">
-    <input type="submit" name="提交">
-  </form>
-</section>
+  <section data-x id="message" class="message">
+    <h2>留言板</h2>
+    <div>
+      <div class="showMessage">
+        <ol id="messageList"></ol>
+      </div>
+      <div class="inputWrapper">
+        <h4>有任何好的意见或建议欢迎留言</h4>
+        <div id="inputUserName" class="inputUserName">
+          <label>怎么称呼</label>
+          <input class="yourName" type="text" name="name">
+        </div>
+        <div id="inputContent" class="inputContent">
+          <label>你想说点啥...</label>
+          <input class="wantSay" type="text" name="content">
+        </div>
+        <input type="submit" name="submitButton">
+      </div>
+    </div>
+  </section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script>

@@ -119,12 +119,12 @@ html{
   border-radius: 50%; margin: 16px; }
 .userCard > footer.media > a:hover { background: #cf5d5f; }
 .userCard svg { width: 30px; height: 30px; fill: white; vertical-align: top; }
-body > main { margin-top: -340px; }
-body > main .downloadResume-wrapper { text-align: center; }
-body > main .downloadResume { font-size: 14px; line-height: 16px; padding: 21px 55px; border: 1px solid #474d56; background: #27292E;
+#userCardWrapper { margin-top: -340px; }
+#userCardWrapper .downloadResume-wrapper { text-align: center; }
+#userCardWrapper .downloadResume { font-size: 14px; line-height: 16px; padding: 21px 55px; border: 1px solid #474d56; background: #27292E;
   display: inline-block; border-radius: 2px; color: #9d9ea2 !important; font-weight: bold; margin: 32px 0; transition: box-shadow 0.2s; }
 
-body > main .downloadResume:hover {
+#userCardWrapper .downloadResume:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -600,26 +600,97 @@ section.portfolio .swiper-slide:nth-child(5){ background-image: url("./img/works
   background: #D64849;
 }
 
-section.message {
+
+section.message > h2{
+  margin-bottom: 32px;
+}
+section > div {
   display: flex;
-  flex-direction: column;
-  background: #35363B;
+  align-items: center;
+  justify-content: center;
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 200px;
 }
-section.message > ol{
-  border: 1px solid yellow;
-  max-width: 700px;
-  margin: 0 auto;
-  border-top: 1px solid #ddd;
+.showMessage, .inputWrapper{
+  background: #35363B;
+  width: 450px;
+  height: 500px;
 }
-section.message > ol > li {
-  border: 1px solid yellow;
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
+.showMessage{
+  margin-right: 20px;
+}
+.inputWrapper{
+  margin-left: 20px;
+}
+.showMessage > ol{
+  max-width: 31vw;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /*border-top: 1px solid #ddd;*/
+  /*border-left: 1px solid #ddd;*/
+  /*border-right: 1px solid #ddd;*/
+}
+.showMessage > ol > li {
+  padding-top: 8px;
+  /*border-bottom: 0.5px solid #d8d8d8;*/
+  /*border-radius: 0;*/
   color: #9c9c9c;
+  white-space: normal;
+  overflow-wrap: break-word;
+  box-shadow: 0 0.5px 0 #d8d8d8;
 }
-form#postMessageForm{
-  border: 1px solid yellow;
+
+.inputUserName, .inputContent{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #9c9c9c;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.inputUserName{
+  margin-bottom: 40px;
+}
+.inputWrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.inputWrapper > h4 {
+  max-width: 350px;
+  color: #9c9c9c;
+  margin: 40px 50px 65px 50px;
+  font-weight: 600;
+}
+.yourName, .wantSay{
+  outline: none;
+  background: none;
+  border: 0;
+  box-shadow: 0 0.5px 0 #d8d8d8;
+  color: #9c9c9c;
+  font-size: 16px;
+  width: 350px;
+  margin-top: 2vw;
+}
+
+input[name=submitButton]{
+  background: #D64849;
+  border: none;
+  border-radius: 5px;
+  margin-top: 65px;
+  margin-left: 50px;
+  width: 120px;
+  height: 55px;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+input[name=submitButton]:hover{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
