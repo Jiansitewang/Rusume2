@@ -1,19 +1,20 @@
 !function () {
   var view = document.querySelector('section.message')
 
-  var model = {
-    //获取数据
+  let model = {
     init: function () {
       var APP_ID = 'YRnz8E4vVkPA4U29WBOoFxmr-gzGzoHsz';
       var APP_KEY = 's9yycLcF9E3QLWBvxJfeWazR';
       AV.init({appId: APP_ID, appKey: APP_KEY});
     },
+    //获取数据
     fetch: function () {
       var query = new AV.Query('Message');
       return query.find() //promise对象
     },
     //创建数据
     save: function (name, content) {
+      //增加数据库的表(class)
       var Message = AV.Object.extend('Message');
       var message = new Message();
       return message.save({ //promise对象
@@ -21,7 +22,7 @@
         'content': content
       })
     }
-  }
+  };
 
   var controller = {
     view: null,
@@ -31,7 +32,7 @@
       this.view = view
       this.model = model
       this.messageList = view.querySelector('#messageList')
-      this.form = view.querySelector('input[name=submitButton]')
+      this.form = view.querySelector('#form')
       console.log(this.form)
       this.inputContent = view.querySelector('#inputContent')
       this.inputUserName = view.querySelector('#inputUserName')
@@ -52,7 +53,7 @@
     },
     bindEvents: function () {
       this.form.addEventListener('submit', (e) => {
-        console.log(1)
+        console.log(e)
         e.preventDefault()
         console.log(3)
         this.saveMessage()
